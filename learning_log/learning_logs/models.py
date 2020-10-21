@@ -8,6 +8,8 @@ class topic(models.Model):
 
 	def __str__(self):
 		return self.text
+
+		
 class entry(models.Model):
 	topic = models.ForeignKey(topic , on_delete=models.CASCADE)
 	text = models.TextField()
