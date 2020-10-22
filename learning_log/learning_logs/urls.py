@@ -4,4 +4,5 @@ from . import views
 app_name = 'learning_log'
 urlpatterns = [
 	path('',views.index,name='index'),
+	path('topics/',views.topics,name='topics'),
 ]
